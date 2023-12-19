@@ -1,4 +1,33 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Media Unit</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://unpkg.com/@sakun/system.css"/><script defer="defer" src="bundle.js"></script></head>
+<!doctype html><html>
+  <head>
+    <meta charset="utf-8">
+    <title>Media Unit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css"/>
+    <script defer="defer" src="bundle.js"></script>
+    <script>
+        function getRandomUrl() {
+            var urls = [
+                "http://opqrstae.com/index.php?/array/eXistenZ/",
+                "https://development-dot-mediaunit-408202.du.r.appspot.com/",
+                "https://youtu.be/Xe9GbWgzA6g",
+                "https://youtu.be/uOxnxnVsvag",
+                "https://sites.google.com/u/0/d/1mB6FwyQ9fDWLiAhN56_t6-bNavZi6KaE/p/1yzqsOQDHcQe9URHk7wI85qYzQZAcPu2d/preview?authuser=0"
+            ];
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            return urls[randomIndex];
+        }
+        window.onload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // 기본 링크 동작 방지
+                    window.location.href = getRandomUrl(); // 랜덤 URL로 이동
+                });
+            });
+        };
+    </script>
+  </head>
   <body><div class="window" style="width:100%"><div class="title-bar"><button aria-label="Close" class="close"></button>
     <h1 class="title" style="font-size: 17px">Recreate a Virtualization Project</h1>
     <button aria-label="Resize" class="resize"></button>
